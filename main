@@ -1,6 +1,7 @@
 def calculate_TA(sequence):
     TA = 0
     for letter in sequence:
+        letter = letter.lower()
         if letter== 'a' or letter== 't':
             TA+=2
         elif letter == 'c' or letter =='g':
