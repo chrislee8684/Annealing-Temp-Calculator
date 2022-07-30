@@ -1,0 +1,12 @@
+def calculate_TA(sequence):
+    TA = 0
+    for letter in sequence:
+        if letter== 'a' or letter== 't':
+            TA+=2
+        elif letter == 'c' or letter =='g':
+            TA+=4
+    TA-=4
+    return TA
+    
+sequence = input("Enter DNA sequence: ")
+print(calculate_TA(sequence))
